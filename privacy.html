@@ -1,76 +1,88 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — Sections & TOC</title><style>body{font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;margin:40px auto;max-width:860px;padding:0 16px;color:#111}h1,h2{line-height:1.25}a{color:#2563eb}</style></head>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Sections &amp; TOC for Google Slides</title>
+<style>
+  body{font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;margin:40px auto;max-width:860px;padding:0 16px;color:#111}
+  h1,h2{line-height:1.25;margin:0 0 .4em}
+  h1{font-size:32px}
+  h2{font-size:20px;margin-top:1.25em}
+  a{color:#2563eb}
+  code{background:#f6f7f8;padding:2px 4px;border-radius:4px}
+  ul{margin:.5em 0 .75em 1.25em}
+  ol{margin:.5em 0 .75em 1.25em}
+  address{font-style:normal;white-space:pre-line}
+  hr{border:0;border-top:1px solid #e5e7eb;margin:1.2em 0}
+</style>
+</head>
 <body>
-<h1>Privacy Policy — Sections &amp; TOC for Google Slides</h1>
-<p><strong>Effective date:</strong> 2025-08-14</p>
-We explain what data the Add-on processes, why, and your choices.
+  <h1>Privacy Policy — Sections &amp; TOC for Google Slides</h1>
+  <p><strong>Effective date:</strong> 2025-08-14</p>
 
-1. Who we are
+  <p>We explain what data the Add-on processes, why, and your choices.</p>
 
-Controller/Provider: Larno Visser, larnotue@gmail.com.
+  <h2>1. Who we are</h2>
+  <p>Controller/Provider: <strong>Larno Visser</strong>, <a href="mailto:larnotue@gmail.com">larnotue@gmail.com</a>.</p>
 
-2. What the Add-on does
+  <h2>2. What the Add-on does</h2>
+  <p>The Add-on helps organize Google Slides decks into sections, generate a Table of Contents, and navigate slides.</p>
 
-The Add-on helps organize Google Slides decks into sections, generate a Table of Contents, and navigate slides.
+  <h2>3. Data we process</h2>
+  <ul>
+    <li><strong>Google account email</strong> (read via Apps Script) to personalize the experience and, if enabled, check license status.</li>
+    <li><strong>Presentation content within the active file</strong>: slide titles, layouts, speaker notes, slide IDs, and thumbnails generated via the Google Slides API.</li>
+    <li><strong>Settings</strong> stored in the presentation’s document properties (e.g., selected mode).</li>
+    <li><strong>Diagnostics</strong>: client-side error messages shown to you; we do not collect analytics unless you opt in.</li>
+  </ul>
+  <p>We do not copy your slides’ content to our servers unless you enable a paid license check (see §6).</p>
 
-3. Data we process
+  <h2>4. Permissions and scope</h2>
+  <p>The Add-on requests the following Google scopes:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/presentations</code> and <code>.../presentations.readonly</code> — read and write slides and notes;</li>
+    <li><code>https://www.googleapis.com/auth/drive.file</code> — work only on the current file;</li>
+    <li><code>https://www.googleapis.com/auth/script.container.ui</code> — show the sidebar UI;</li>
+    <li><code>https://www.googleapis.com/auth/userinfo.email</code> — know which user is running the Add-on.</li>
+  </ul>
 
-Google account email (read via Apps Script) to personalize the experience and, if enabled, check license status.
+  <h2>5. How we use data</h2>
+  <ul>
+    <li>Create/update a Table of Contents, read/write speaker notes for section tags, and render slide thumbnails.</li>
+    <li>Store per-file settings in document properties so your choices persist.</li>
+  </ul>
 
-Presentation content inside the active Slides file: slide titles, layouts, speaker notes, slide IDs, and thumbnails generated via the Google Slides API.
+  <h2>6. Payments / licensing</h2>
+  <p>If you opt into a paid plan, the Add-on may call our license endpoint with your email to verify entitlement. We store email, plan, and expiry for licensing only. No slide content is sent to us.</p>
+  <p>Payments are processed by <strong>Stripe, Inc.</strong>, a third-party payment processor. During a transaction, Stripe collects transaction-related data—such as name, email, billing address, and payment method details—and may share it with financial partners and fraud-prevention services to authenticate and authorize payments. We (the Add-on provider) do not have access to full card numbers (PANs) or CVV details. Stripe processes personal data as both a data controller and data processor under its Privacy Policy and Data Processing Agreement, and engages subprocessors governed by strict contracts and international transfer frameworks to ensure data security and regulatory compliance.</p>
 
-Settings stored in the presentation’s document properties (e.g., selected mode).
+  <h2>7. Retention</h2>
+  <ul>
+    <li>We don’t retain your slide content.</li>
+    <li>License records are kept while your subscription is active and for up to 24 months after expiry (for audit and fraud prevention).</li>
+  </ul>
 
-Diagnostics: client-side error messages shown to you; we do not collect analytics unless you opt in.
+  <h2>8. Security</h2>
+  <p>We rely on Google’s security for Apps Script execution and the Slides API. Any server-side endpoints use HTTPS and access controls.</p>
 
-We do not copy your slides’ content to our servers unless you enable a paid license check (see §6).
+  <h2>9. Your rights</h2>
+  <p>Depending on your location, you may have rights to access, correct, delete, or export your data. Contact <a href="mailto:larnotue@gmail.com">larnotue@gmail.com</a>.</p>
 
-4. Permissions and scope
+  <h2>10. Children</h2>
+  <p>The Add-on is not directed to children under 16.</p>
 
-The Add-on requests:
+  <h2>11. Changes</h2>
+  <p>We’ll update this policy as needed and note a new effective date.</p>
 
-presentations / presentations.readonly to read and write slides and notes,
-
-drive.file to work on the current file,
-
-script.container.ui to show the sidebar,
-
-userinfo.email to know which user is running the Add-on.
-
-5. How we use data
-
-Create/update a Table of Contents, read/write speaker notes for section tags, and render slide thumbnails.
-
-Store per-file settings in document properties so your choices persist.
-
-6. Payments / licensing
-
-If you opt into a paid plan, the Add-on may call our license endpoint with your email to verify entitlement. We store email, plan, and expiry for licensing only. No slide content is sent to us. Payments are processed by Stripe, Inc., a third‑party payment processor. During a transaction, Stripe collects transaction-related data—such as name, email, billing address, and payment method details—and may share it with financial partners and fraud‑prevention services to authenticate and authorize payments. We (the Add‑on provider) do not have access to full card numbers (PANs) or CVV details. Stripe processes personal data as both a data controller and data processor under its Privacy Policy and Data Processing Agreement, and engages subprocessors governed by strict contracts and EU‑US (and other) transfer frameworks to ensure data security and regulatory compliance..
-
-7. Retention
-
-We don’t retain your slide content.
-
-License records are kept while your subscription is active and for up to 24 months after expiry (for audit and fraud prevention).
-
-8. Security
-
-We rely on Google’s security for Apps Script execution and the Slides API. Any server-side endpoints use HTTPS and access controls.
-
-9. Your rights
-
-Depending on your location, you may have rights to access, correct, delete, or export your data. Contact larnotue@gmail.com.
-
-10. Children
-
-The Add-on is not directed to children under 16.
-
-11. Changes
-
-We’ll update this policy as needed and note a new effective date.
-
-12. Contact
-
+  <h2>12. Contact</h2>
+  <address>
 Larno Visser — Privacy
-Email: larnotue@gmail.com
-</body></html>
+Email: <a href="mailto:larnotue@gmail.com">larnotue@gmail.com</a>
+  </address>
+
+  <hr>
+  <p><small>© <span id="y"></span> Larno Visser</small></p>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
